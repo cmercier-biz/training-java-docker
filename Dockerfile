@@ -1,6 +1,4 @@
-FROM mysql:5.7
+FROM tomcat:8.0-jre8
 
-ENV MYSQL_ROOT_PASSWORD root
-
-ADD my.cnf /etc/mysql/my.cnf
-ADD *.sql /docker-entrypoint-initdb.d/ 
+# Deploy application
+#ADD target/training-java-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/
